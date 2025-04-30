@@ -7,6 +7,17 @@
       font-family: verdana;
       font-size: 12px;
     }
+    .hidden{
+      text-color: white;
+    }
+    .shown{
+      text-color: black;
+    }
+    #sodium-button{
+      position: fixed;
+      top: 100px;
+      left: 4px;
+    }
   </style>
 </head>
 <body>
@@ -27,7 +38,11 @@
     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   <script src="main.js"></script>
   <br>
-  <button id="sodium" onclick="sodium()">Sodium Button - Press to unlock more information</button>
+  <button id="sodium-button" onclick="sodium()">Sodium Button - Press to unlock more information</button>
   <!-- when the button is pressed, play a popping sound -->
+  <br>
+  <div class="hidden">
+    
+  </div>
 </body>
 </html>
