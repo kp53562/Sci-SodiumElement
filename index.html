@@ -13,10 +13,10 @@
     .shown{
       text-color: black;
     }
-    #sodium-button{
+    #navbar{
       position: fixed;
-      top: 150px;
-      left: 4px;
+      top: 0px;
+      left: 0px;
     }
   </style>
 </head>
@@ -38,7 +38,9 @@
     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   <script src="main.js"></script>
   <br>
-  <img id="sodium-button" onclick="sodium()" src="assets/lye_button.png" alt="Sodium Hydroxide: Click for more information" width="64px" height="24px">
+  <div id="navbar">
+  <img onclick="sodium()" src="assets/compounds_button.png" alt="Compounds: Click for more information" width="128px" height="48px">
+  </div>
   <!-- when the button is pressed, play a popping sound -->
   <br>
   <h1 class="hidden">Sodium...</h1>
