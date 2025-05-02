@@ -38,9 +38,14 @@
     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   <script src="main.js"></script>
   <br>
-  <div id="navbar">
-    <button onclick="goToCompounds()">
-        <img src="assets/compounds_button.png" alt="Compounds: Click for more information" width="128px" height="44px">
+  <script>
+    function runSodium() {
+      window.location.href="https://kp53562.github.io/Sci-SodiumElement/";
+    }
+  </script>
+  <div id="navbar" width="400px" height="50px">
+    <button onclick="runSodium()">
+        <img src="assets/compounds_button.png" alt="Go to Compounds page" width="128px" height="44px">
     </button>
   </div>
   <!-- when the button is pressed, play a popping sound -->
