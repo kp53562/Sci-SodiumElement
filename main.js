@@ -1,8 +1,3 @@
-function goToCompounds() {
-  alert("hello!");
-  try{
-    window.location.href = window.location.href+"/compounds/list.html";
-  } catch (exception) {
-    alert("An error: ", exception.message, " occured! Please relay this to the developer.");
-  }
+function properties() {
+  window.location.href="https://kp53562.github.io/Sci-SodiumElement/properties/properties.html";
 }
