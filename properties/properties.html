@@ -5,13 +5,7 @@
   <style>
     .font-sciency{
       font-family: verdana;
-      font-size: 12px;
-    }
-    .hidden{
-      color: white;
-    }
-    .shown{
-      color: black;
+      font-size: 14px;
     }
     #navbar{
       position: fixed;
@@ -34,6 +28,11 @@
   <img src="../assets/sodium-cut-2-bottom.png" id="demo-two" width="64" height="32" style="visibility: hidden;">
   <button onclick="startInteraction()" id="action-button">Try it!</button>
   <br>
+  <p class="font-sciency" id="show-on-interaction-end">
+    As you can see, cutting the sodium exposes the inside where it has not yet oxidized. <br>
+    It can be easily cut with a knife, but reacts very quickly with air, so the inside will soon oxidize.<br>
+    Click the "Reload the demo" button to start with another oxidized chunk.
+  </p>
   <script>
     function runSodium() {
       window.location.href="https://kp53562.github.io/Sci-SodiumElement";
