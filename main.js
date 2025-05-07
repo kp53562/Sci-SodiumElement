@@ -1,4 +1,5 @@
 var funFactsCount=1; // not advanced enough. I need ideas!
+const maxFunFactsCount=5;
 function elemById(identification){
   return document.getElementById(identification);
 }
@@ -8,7 +9,7 @@ function properties() {
 function revealFunFacts(){
   elemById("r"+funFactsCount.toString()).setAttribute("style","visibility: visible;");
   funFactsCount++;
-  if (funFactsCount>4){
+  if (funFactsCount>maxFunFactsCount){
     elemById("funFactsButton").setAttribute("style","visibility: hidden;");
   }
 }
