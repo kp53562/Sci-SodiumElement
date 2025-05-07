@@ -6,13 +6,14 @@ function elemById(identification){
 function properties() {
   window.location.href="https://kp53562.github.io/Sci-SodiumElement/properties/";
 }
-function relocateFunction() {
-  window.location.href="https://kp53562.github.io/Sci-SodiumElement/location/";
-}
 function revealFunFacts(){
   elemById("r"+funFactsCount.toString()).setAttribute("style","visibility: visible;");
   funFactsCount++;
   if (funFactsCount>maxFunFactsCount){
     elemById("funFactsButton").setAttribute("style","visibility: hidden;");
   }
+}
+
+function relocateFunction() {
+  window.location.href="https://kp53562.github.io/Sci-SodiumElement/location/";
 }
