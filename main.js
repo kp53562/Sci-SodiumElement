@@ -6,10 +6,9 @@ function properties() {
   window.location.href="https://kp53562.github.io/Sci-SodiumElement/properties/";
 }
 function revealFunFacts(){
-  if (funFactsCount<4){
-    elemById("r"+funFactsCount.toString()).setAttribute("style","visibility: visible;");
-    funFactsCount++;
-  }else{
+  elemById("r"+funFactsCount.toString()).setAttribute("style","visibility: visible;");
+  funFactsCount++;
+  if (funFactsCount>3){
     elemById("funFactsButton").setAttribute("style","visibility: hidden;");
   }
 }
