@@ -10,8 +10,10 @@ function hideOrShowList(listID){
   if (showList == false){
     listE.setAttribute("style","position: absolute; visibility: hidden;");
     imgE.setAttribute("src","..assets/hide-list_button.png");
+    imgE.setAttribute("alt","Collapse");
   }else{
     listE.setAttribute("style","position: static; visibility: visible;");
     imgE.setAttribute("src","..assets/show-list_button.png");
+    imgE.setAttribute("alt","Expand");
   }
 }
