@@ -2,9 +2,8 @@ function elemFromID(id){
   return document.getElementById(id);
 }
 function hideOrShowList(listID){
-  var stringID = String(listID);
-  var listE = elemFromID(stringID);
-  var imgE = elemFromID(stringID + "b");
+  var listE = elemFromID(String(listID));
+  var imgE = elemFromID(String(listID) + "b");
   var showList = false;
   if (imgE.getAttribute("alt")=="Expand"){showList = false;}
   if (showList == false){
