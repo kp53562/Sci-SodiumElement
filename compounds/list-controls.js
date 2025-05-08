@@ -4,7 +4,7 @@ function elemFromID(id){
 function hideOrShowList(listID){
   var listE = elemFromID(String(listID));
   var imgE = elemFromID(String(listID) + "b");
-  var showList = false;
+  var showList = true;
   if (imgE.getAttribute("alt")=="Expand"){showList = false;}
   if (showList == false){
     listE.setAttribute("style","position: absolute; visibility: hidden;");
