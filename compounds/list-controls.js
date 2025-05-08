@@ -7,11 +7,11 @@ function hideOrShowList(listID){
   var showList = true;
   if (imgE.getAttribute("alt")=="Expand"){showList = false;}
   if (showList == false){
-    listE.setAttribute("style","position: absolute; visibility: hidden;");
+    listE.setAttribute("style","position: static; visibility: visible;");
     imgE.setAttribute("src","../assets/hide-list_button.png");
     imgE.setAttribute("alt","Collapse");
   }else{
-    listE.setAttribute("style","position: static; visibility: visible;");
+    listE.setAttribute("style","position: absolute; visibility: hidden;");
     imgE.setAttribute("src","../assets/expand-list_button.png");
     imgE.setAttribute("alt","Expand");
   }
