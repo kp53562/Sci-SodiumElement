@@ -13,7 +13,7 @@ function hideOrShowList(listID){
     imgE.setAttribute("alt","Collapse");
   }else{
     listE.setAttribute("style","position: static; visibility: visible;");
-    imgE.setAttribute("src","../assets/show-list_button.png");
+    imgE.setAttribute("src","../assets/expand-list_button.png");
     imgE.setAttribute("alt","Expand");
   }
 }
