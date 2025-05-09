@@ -36,6 +36,7 @@ function nextQuestion() {
   if (questionIndex < questions.length){
     document.getElementById("q-hao").innerHTML = "Question "+ String(questionIndex+1) + ": ";
     document.getElementById("question").innerHTML = questions[questionIndex];
+    document.getElementById("answer-box").value = "";
     if (questionUsesRadio[questionIndex]) {
       showRadios();
       if (questionIndex == 2){
