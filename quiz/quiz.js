@@ -1,8 +1,10 @@
 var questionIndex = 0;
 var questions = ["What is sodium's element number?",
-                 "How many neutrons does an atom of Sodium-23 contain?"];
-var questionUsesRadio = [false,false];
-var answers = [11,12];
+                 "How many neutrons does an atom of Sodium-23 contain?",
+                 "From which compound was sodium first extracted from when it was discovered?",
+                 "What visible color does sodium emit when excited in a sodium vapor lamp?"];
+var questionUsesRadio = [false,false,true,true];
+var answers = [11,12,"option2","option1"];
 // c++ >= java >(c# is somewhere here) javascript = python > lua
 function hideRadios(){
   document.getElementById("radio-one").setAttribute("style","visibility: hidden;");
@@ -33,6 +35,15 @@ function nextQuestion() {
     document.getElementById("question").innerHTML = questions[questionIndex];
     if (questionUsesRadio[questionIndex]) {
       showRadios();
+      if (questionIndex == 2){
+        document.getElementById("rone-text").innerHTML = "Salt";
+        document.getElementById("rtwo-text").innerHTML = "Lye";
+        document.getElementById("rthree-text").innerHTML = "Adenine";
+      }else if (questionIndex == 3){
+        document.getElementById("rone-text").innerHTML = "Primarily Yellow";
+        document.getElementById("rtwo-text").innerHTML = "Primarily Magenta";
+        document.getElementById("rthree-text").innerHTML = "Primarily White";
+      }
     }else{hideRadios();}
   }else{
     document.getElementById("q-hao").innerHTML = "You have successfully completed all the questions!";
@@ -49,8 +60,5 @@ function checkAnswer() {
       document.getElementById("q-hao").innerHTML = "Question "+ String(questionIndex+1) + ": the answer was "
         + String(answers[questionIndex]) + ".";
     }
-  }else{
-    alert("yay")
   }
-  alert("what")
 }
