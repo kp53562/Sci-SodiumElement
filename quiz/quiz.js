@@ -67,8 +67,9 @@ function nextQuestion() {
     document.getElementById("q-hao").innerHTML = 
       "You have successfully completed all the questions! Good job.";
     document.getElementById("question").innerHTML = "";
+    document.getElementById("submit-button").setAttribute("style","visibility: hidden;");
     hideRadios();
-    document.getElementById("answer-box").setAttribute("style","visibility: hidden");
+    document.getElementById("answer-box").setAttribute("style","visibility: hidden;");
   }
 }
 function checkAnswer() {
