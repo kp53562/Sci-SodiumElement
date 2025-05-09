@@ -28,11 +28,13 @@
       What is sodium's element number?
     </p>
     <br>
-    <input id="answer-box" type="number"><!-- change type as needed -->
+    <input id="answer-box" type="number" style="visibility: visible;"><!-- change type as needed -->
     <!-- multiple choice(change value as needed): -->
-    <input id="radio-one" name="multi_choice" value="Red pill" style="visibility: hidden;"> <!-- element.checked? -->
-    <input id="radio-two" name="multi_choice" value="Blue pill" style="visibility: hidden;">
+    <input id="radio-one" name="multi_choice" value="Red pill" style="visibility: hidden;"> <!-- element.checked? --><br>
+    <input id="radio-two" name="multi_choice" value="Blue pill" style="visibility: hidden;"><br>
     <input id="radio-three" name="multi_choice" value="Purple pill" style="visibility: hidden;">
+    <br>
+    <button onclick="checkAnswer()">Submit</button>
   </div>
   <script>
     function runSodium() {
