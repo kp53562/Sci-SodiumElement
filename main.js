@@ -7,6 +7,7 @@ function properties() {
   window.location.href="https://kp53562.github.io/Sci-SodiumElement/properties/";
 }
 function revealFunFacts(){
+  console.log("Fun Facts Activated!");
   elemById("funFactsBox").setAttribute("style","visibility: visible; background-color: #69A455; border-style: solid; border-width: 2px;");
   elemById("r"+funFactsCount.toString()).setAttribute("style","visibility: visible;");
   funFactsCount++;
