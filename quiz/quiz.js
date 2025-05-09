@@ -53,6 +53,7 @@ function nextQuestion() {
     }else{hideRadios();}
   }else{
     document.getElementById("q-hao").innerHTML = "You have successfully completed all the questions!";
+    document.getElementById("question").innerHTML = "";
     hideRadios();
     document.getElementById("answer-box").setAttribute("style","visibility: hidden");
   }
