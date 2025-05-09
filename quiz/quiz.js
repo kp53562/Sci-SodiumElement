@@ -11,6 +11,7 @@ var questions = ["What is sodium's element number?",
 var questionUsesRadio = [false,false,true,true,true,false,false,false];
 var answers = [11,12,"option 2","option 1","option 2",98,1807,"humphry davy"];
 // c++ >= java >(c# is somewhere here) javascript = python > lua
+// don't ask me why i decided to state my opinions inside of a quiz file.
 function hideRadios(){
   document.getElementById("radio-one").setAttribute("style","visibility: hidden;");
   document.getElementById("rone-text").setAttribute("style","visibility: hidden;");
