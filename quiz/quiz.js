@@ -5,10 +5,11 @@ var questions = ["What is sodium's element number?",
                  "What visible color does sodium emit when excited in a sodium vapor lamp?",
                  "Pick the country that produces the largest amount of metallic sodium.",
                  "Enter sodium's melting point, rounded to the nearest whole number.",
-                 "In what year was sodium discovered?"
+                 "In what year was sodium discovered?",
+                 "Who discovered sodium?"
                 ];
-var questionUsesRadio = [false,false,true,true,true,false,false];
-var answers = [11,12,"option 2","option 1","option 2",98,1807];
+var questionUsesRadio = [false,false,true,true,true,false,false,false];
+var answers = [11,12,"option 2","option 1","option 2",98,1807,"humphry davy"];
 // c++ >= java >(c# is somewhere here) javascript = python > lua
 function hideRadios(){
   document.getElementById("radio-one").setAttribute("style","visibility: hidden;");
@@ -52,6 +53,8 @@ function nextQuestion() {
         document.getElementById("rone-text").innerHTML = "The Democratic Penguins Republic";
         document.getElementById("rtwo-text").innerHTML = "China";
         document.getElementById("rthree-text").innerHTML = "Australia";
+      }else if (questionIndex == 7){
+        document.getElementById("answer-box").setAttribute("type","text");
       }
     }else{hideRadios();}
   }else{
@@ -64,8 +67,12 @@ function nextQuestion() {
 }
 function checkAnswer() {
   if (questionIndex < questions.length) {
-    if ((questionUsesRadio[questionIndex]) ? (answerToRadio(answers[questionIndex]).checked) : 
-        (document.getElementById("answer-box").value == answers[questionIndex])) {
+    if (
+      (questionUsesRadio[questionIndex]) ? (answerToRadio(answers[questionIndex]).checked) : 
+        ((
+          (typeof(answers[questionIndex]) == "string") ? String(document.getElementById("answer-box").value).toLowerCase() : 
+         document.getElementById("answer-box").value) == answers[questionIndex])
+       ) {
       nextQuestion();
     }else{//q-hao = question number
       document.getElementById("q-hao").innerHTML = "Question "+ String(questionIndex+1) + ": The answer was "
