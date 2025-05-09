@@ -49,5 +49,8 @@ function checkAnswer() {
       document.getElementById("q-hao").innerHTML = "Question "+ String(questionIndex+1) + ": the answer was "
         + String(answers[questionIndex]) + ".";
     }
+  }else{
+    alert("yay")
   }
+  alert("what")
 }
