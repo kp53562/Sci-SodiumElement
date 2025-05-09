@@ -57,6 +57,7 @@ function nextQuestion() {
     }else{
       hideRadios();
       if (questionIndex == 7){
+        alert("You are on the last question.");
         document.getElementById("answer-box").setAttribute("type","text");
       }else {
         document.getElementById("answer-box").setAttribute("type","number");
