@@ -58,6 +58,8 @@ function nextQuestion() {
       hideRadios();
       if (questionIndex == 7){
         document.getElementById("answer-box").setAttribute("type","text");
+      }else {
+        document.getElementById("answer-box").setAttribute("type","number");
       }
     }
   }else{
