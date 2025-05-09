@@ -30,6 +30,7 @@ function nextQuestion() {
   questionIndex++;
   if (questionIndex < questions.length){
     document.getElementById("q-hao").innerHTML = "Question "+ String(questionIndex+1) + ": ";
+    document.getElementById("question").innerHTML = questions[questionIndex];
     if (questionUsesRadio[questionIndex]) {
       showRadios();
     }else{hideRadios();}
