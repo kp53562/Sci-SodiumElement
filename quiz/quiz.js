@@ -8,7 +8,7 @@ var questions = ["What is sodium's element number?",
                  "In what year was sodium discovered?"
                 ];
 var questionUsesRadio = [false,false,true,true,true,false,false];
-var answers = [11,12,"option2","option1","option2",98,1807];
+var answers = [11,12,"option 2","option 1","option 2",98,1807];
 // c++ >= java >(c# is somewhere here) javascript = python > lua
 function hideRadios(){
   document.getElementById("radio-one").setAttribute("style","visibility: hidden;");
@@ -29,8 +29,8 @@ function showRadios() {
   document.getElementById("answer-box").setAttribute("style","visibility: hidden;");
 }
 function answerToRadio(val){
-  return (val == "option1") ? document.getElementById("radio-one") : 
-    ((val=="option2") ? document.getElementById("radio-two") : document.getElementById("radio-three"));
+  return (val == "option 1") ? document.getElementById("radio-one") : 
+    ((val=="option 2") ? document.getElementById("radio-two") : document.getElementById("radio-three"));
 }
 function nextQuestion() {
   questionIndex++;
