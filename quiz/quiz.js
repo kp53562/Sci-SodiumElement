@@ -4,10 +4,11 @@ var questions = ["What is sodium's element number?",
                  "From which compound was sodium first extracted from when it was discovered?",
                  "What visible color does sodium emit when excited in a sodium vapor lamp?",
                  "Pick a country that produces metallic sodium.",
-                 "Enter sodium's melting point to the nearest whole number"
+                 "Enter sodium's melting point, rounded to the nearest whole number.",
+                 "In what year was sodium discovered?"
                 ];
-var questionUsesRadio = [false,false,true,true,true,false];
-var answers = [11,12,"option2","option1","option2",98];
+var questionUsesRadio = [false,false,true,true,true,false,false];
+var answers = [11,12,"option2","option1","option2",98,1807];
 // c++ >= java >(c# is somewhere here) javascript = python > lua
 function hideRadios(){
   document.getElementById("radio-one").setAttribute("style","visibility: hidden;");
@@ -66,7 +67,7 @@ function checkAnswer() {
         (document.getElementById("answer-box").value == answers[questionIndex])) {
       nextQuestion();
     }else{//q-hao = question number
-      document.getElementById("q-hao").innerHTML = "Question "+ String(questionIndex+1) + ": the answer was "
+      document.getElementById("q-hao").innerHTML = "Question "+ String(questionIndex+1) + ": The answer was "
         + String(answers[questionIndex]) + ".";
     }
   }
