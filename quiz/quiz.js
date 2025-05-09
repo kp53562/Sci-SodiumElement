@@ -3,10 +3,11 @@ var questions = ["What is sodium's element number?",
                  "How many neutrons does an atom of Sodium-23 contain?",
                  "From which compound was sodium first extracted from when it was discovered?",
                  "What visible color does sodium emit when excited in a sodium vapor lamp?",
-                 "Pick a country that produces metallic sodium."
+                 "Pick a country that produces metallic sodium.",
+                 "Enter sodium's melting point to the nearest whole number"
                 ];
-var questionUsesRadio = [false,false,true,true,true];
-var answers = [11,12,"option2","option1","option2"];
+var questionUsesRadio = [false,false,true,true,true,false];
+var answers = [11,12,"option2","option1","option2",98];
 // c++ >= java >(c# is somewhere here) javascript = python > lua
 function hideRadios(){
   document.getElementById("radio-one").setAttribute("style","visibility: hidden;");
