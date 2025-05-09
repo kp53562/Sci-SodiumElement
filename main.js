@@ -13,7 +13,9 @@ function revealFunFacts(){
     elemById("funFactsButton").setAttribute("style","visibility: hidden;");
   }
 }
-
+function goToQuiz() {
+  window.location.href="https://kp53562.github.io/Sci-SodiumElement/quiz/";
+}
 function relocateFunction() {
   window.location.href="https://kp53562.github.io/Sci-SodiumElement/location/";
 }
