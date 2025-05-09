@@ -2,9 +2,11 @@ var questionIndex = 0;
 var questions = ["What is sodium's element number?",
                  "How many neutrons does an atom of Sodium-23 contain?",
                  "From which compound was sodium first extracted from when it was discovered?",
-                 "What visible color does sodium emit when excited in a sodium vapor lamp?"];
-var questionUsesRadio = [false,false,true,true];
-var answers = [11,12,"option2","option1"];
+                 "What visible color does sodium emit when excited in a sodium vapor lamp?",
+                 "Pick a country that produces metallic sodium."
+                ];
+var questionUsesRadio = [false,false,true,true,true];
+var answers = [11,12,"option2","option1","option2"];
 // c++ >= java >(c# is somewhere here) javascript = python > lua
 function hideRadios(){
   document.getElementById("radio-one").setAttribute("style","visibility: hidden;");
@@ -43,6 +45,10 @@ function nextQuestion() {
         document.getElementById("rone-text").innerHTML = "Primarily Yellow";
         document.getElementById("rtwo-text").innerHTML = "Primarily Magenta";
         document.getElementById("rthree-text").innerHTML = "Primarily White";
+      }else if (questionIndex == 4){
+        document.getElementById("rone-text").innerHTML = "The Democratic Penguins Republic";
+        document.getElementById("rtwo-text").innerHTML = "China";
+        document.getElementById("rthree-text").innerHTML = "Australia";
       }
     }else{hideRadios();}
   }else{
