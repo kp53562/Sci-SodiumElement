@@ -3,7 +3,7 @@ var questions = ["What is sodium's element number?",
                  "How many neutrons does an atom of Sodium-23 contain?",
                  "From which compound was sodium first extracted from when it was discovered?",
                  "What visible color does sodium emit when excited in a sodium vapor lamp?",
-                 "Pick a country that produces metallic sodium.",
+                 "Pick the country that produces the largest amount of metallic sodium.",
                  "Enter sodium's melting point, rounded to the nearest whole number.",
                  "In what year was sodium discovered?"
                 ];
@@ -55,7 +55,8 @@ function nextQuestion() {
       }
     }else{hideRadios();}
   }else{
-    document.getElementById("q-hao").innerHTML = "You have successfully completed all the questions!";
+    document.getElementById("q-hao").innerHTML = 
+      "You have successfully completed all the questions! Good job.";
     document.getElementById("question").innerHTML = "";
     hideRadios();
     document.getElementById("answer-box").setAttribute("style","visibility: hidden");
