@@ -53,10 +53,13 @@ function nextQuestion() {
         document.getElementById("rone-text").innerHTML = "The Democratic Penguins Republic";
         document.getElementById("rtwo-text").innerHTML = "China";
         document.getElementById("rthree-text").innerHTML = "Australia";
-      }else if (questionIndex == 7){
+      }
+    }else{
+      hideRadios();
+      if (questionIndex == 7){
         document.getElementById("answer-box").setAttribute("type","text");
       }
-    }else{hideRadios();}
+    }
   }else{
     document.getElementById("q-hao").innerHTML = 
       "You have successfully completed all the questions! Good job.";
